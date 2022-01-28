@@ -1,0 +1,82 @@
+{
+  "name": "homekit-code",
+  "version": "0.0.1",
+  "description": "Generate a pairing HomeKit QR code label for your HomeKit accessory",
+  "keywords": [
+    "apple",
+    "code",
+    "esp8266",
+    "esp32",
+    "homebridge",
+    "homekit",
+    "pairing",
+    "qrcode"
+  ],
+  "homepage": "https://github.com/simongolms/homekit-code.git",
+  "license": "MIT",
+  "author": {
+    "name": "Simon Golms",
+    "email": "development@gol.ms",
+    "url": "https://gol.ms"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "bin": {
+    "homekit-code": "lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simongolms/homekit-code.git"
+  },
+  "bugs": {
+    "url": "https://github.com/simongolms/homekit-code/issues"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "prepare": "husky install",
+    "release": "dotenv semantic-release --no-ci",
+    "release:ci": "semantic-release",
+    "release:dry-run": "npm run release -- --dry-run",
+    "repair": "npx rimraf lib node_modules .git/hooks package-lock.json && npm install"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "1.4.0",
+    "qrcode": "1.5.0",
+    "yargs": "17.3.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "16.1.0",
+    "@commitlint/config-conventional": "16.0.0",
+    "@semantic-release/changelog": "6.0.1",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "8.0.2",
+    "@types/node": "17.0.13",
+    "@types/qrcode": "1.4.2",
+    "@types/yargs": "17.0.8",
+    "@typescript-eslint/eslint-plugin": "5.10.1",
+    "@typescript-eslint/parser": "5.10.1",
+    "dotenv": "14.3.2",
+    "eslint": "8.7.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-import-resolver-typescript": "2.5.0",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-no-type-assertion": "1.1.1",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-sonarjs": "0.11.0",
+    "eslint-plugin-sort-keys-fix": "1.1.2",
+    "eslint-plugin-typescript-sort-keys": "2.1.0",
+    "husky": "7.0.4",
+    "lint-staged": "12.3.2",
+    "nodemon": "2.0.15",
+    "prettier": "2.5.1",
+    "semantic-release": "19.0.2",
+    "ts-node": "10.4.0",
+    "typescript": "4.5.5"
+  }
+}
