@@ -84,13 +84,6 @@ web_modules/
 
 \*.tgz
 
-# Output of 'npm start'
-
-homekit-qrcode.png
-homekit-qrcode.svg
-homekit-tag.png
-homekit-tag.svg
-
 # Yarn Integrity file
 
 .yarn-integrity
