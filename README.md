@@ -1,6 +1,6 @@
-# HomeKit QR Code
+# HomeKit Code
 
-Generate a pairing HomeKit QR code label for your HomeKit accessory
+Generate a pairing HomeKit QR code label or scannable tag to setup your HomeKit accessory
 
 [![npm version](https://img.shields.io/npm/v/homekit-code.svg)](https://www.npmjs.com/package/homekit-code)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/simongolms/homekit-code#readme)
@@ -17,7 +17,7 @@ npx homekit-code qrcode --category=switch --pairingCode=84131633 --setupId=3QYT
 
 ### CLI
 
-```sh
+```txt
 Usage: homekit-code qrcode [options]
 
 Generate a scannable HomeKit QR Code label
@@ -49,7 +49,7 @@ npx homekit-code tag --pairingCode=84131633
 
 ### CLI
 
-```sh
+```txt
 Usage: homekit-code qrcode [options]
 
 Generate a scannable HomeKit tag label
@@ -175,7 +175,7 @@ Give a ⭐️ if this project helped you!
 
 ## License
 
-Copyright © 2022 [Simon Golms](https://github.com/simongolms).<br />
+Copyright © 2022 [Simon Golms](https://github.com/simongolms).<br />
 This project is [MIT](https://github.com/simongolms/homekit-code/blob/master/LICENSE) licensed.
 
 ## Resources
