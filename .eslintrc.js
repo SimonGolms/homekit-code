@@ -53,14 +53,6 @@ module.exports = {
           order: 'asc',
         },
         groups: ['builtin', 'external', 'internal'],
-        pathGroups: [
-          {
-            group: 'external',
-            pattern: 'react',
-            position: 'before',
-          },
-        ],
-        pathGroupsExcludedImportTypes: ['react'],
       },
     ],
     'import/prefer-default-export': 'off',
