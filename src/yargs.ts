@@ -2,7 +2,7 @@ import yargs from 'yargs/yargs';
 import { CATEGORIES } from './config/categories';
 import { OUTPUT_FORMATS } from './config/output';
 import { Category, OutputFormat } from './types';
-import { isNumber } from './utils/number';
+import { isPairingCode } from './utils/number';
 
 export const argv = yargs(process.argv.slice(2))
   // Attempt to detect the os locale
@@ -92,11 +92,10 @@ export const argv = yargs(process.argv.slice(2))
       );
   })
   .check(({ pairingCode }) => {
-    if (pairingCode.length === 8 && pairingCode.split('').every((char) => isNumber(char))) {
+    if (isPairingCode(pairingCode)) {
       return true;
-    } else {
-      throw new Error('Pairing Code must be specified with 8 digits');
     }
+    throw new Error('Pairing Code must be specified with 8 digits');
   })
   .help()
   .usage('Usage: homekit-code [commands] [options]')
