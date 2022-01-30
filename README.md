@@ -87,6 +87,12 @@ npm install
 npm run start -- qrcode --category=switch --pairingCode=84131633 --setupId=3QYT
 ```
 
+### Test
+
+```sh
+npm test
+```
+
 ### Build
 
 To build `homekit-code` for production, run:
