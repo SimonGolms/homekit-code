@@ -50,7 +50,7 @@ export const composeSetupUri = (category: number, password: string, setupId: str
   payload = payload | (version & 0x7);
 
   payload = payload << 4;
-  payload = payload | (reserved & 0xf); // reserved bits
+  payload = payload | (reserved & 0xf);
 
   payload = payload << 8;
   payload = payload | (category & 0xff);
