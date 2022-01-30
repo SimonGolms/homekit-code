@@ -9,6 +9,8 @@
     "rootDir": "src",
     "strict": true,
     "target": "es5",
-    "types": ["node"]
-  }
+    "types": ["jest", "node"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }

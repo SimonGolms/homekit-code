@@ -1,6 +1,7 @@
 module.exports = {
   env: {
     es6: true,
+    'jest/globals': true,
     node: true,
   },
   extends: [
@@ -8,6 +9,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
+    'plugin:jest/all',
     'plugin:sonarjs/recommended',
     'plugin:typescript-sort-keys/recommended',
     // HINT: prettier must be the last extension to work
@@ -20,6 +22,7 @@ module.exports = {
   },
   plugins: [
     '@typescript-eslint',
+    'jest',
     'sonarjs',
     'sort-keys-fix',
     'typescript-sort-keys',
@@ -34,7 +37,8 @@ module.exports = {
       'error',
       {
         ignoreExports: [
-          '*.js', // mostly configuration files
+          'src/**/**/*.test.ts',
+          '*.{js,ts}', // mostly configuration files
         ],
         missingExports: true,
         src: ['.'],
@@ -67,6 +71,7 @@ module.exports = {
         SwitchCase: 1,
       },
     ],
+    'jest/consistent-test-it': ['error', { fn: 'test' }],
     'no-multi-spaces': 'error',
     'no-multiple-empty-lines': 'error',
     'no-var': 'error',
