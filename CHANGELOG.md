@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/simongolms/homekit-code/compare/v1.0.0...v1.0.1) (2022-01-30)
+
+
+### Bug Fixes
+
+* **tag:** remove whitespaces ([159b419](https://github.com/simongolms/homekit-code/commit/159b419ea60e6b325217a74786d9236189831df7))
+
 # 1.0.0 (2022-01-28)
 
 
