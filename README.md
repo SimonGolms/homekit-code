@@ -7,7 +7,7 @@ Generate a pairing HomeKit QR code label or scannable tag to setup your HomeKit 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/simongolms/homekit-code/graphs/commit-activity)
 [![License: MIT](https://img.shields.io/github/license/simongolms/homekit-code)](https://github.com/simongolms/homekit-code/blob/master/LICENSE)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/SimonGolms/homekit-code/releases)
+[![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 
 ## Usage - QR Code
 
