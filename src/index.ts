@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* eslint-disable import/no-unused-modules */
+/* eslint-disable import/no-unused-modules, jest/require-hook */
 
 import { createQrCode } from './commands/qrcode/qrcode';
 import { createTag } from './commands/tag/tag';
