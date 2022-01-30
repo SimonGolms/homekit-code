@@ -9,8 +9,11 @@
     "esp32",
     "homebridge",
     "homekit",
+    "homekit-accessory",
+    "label",
     "pairing",
-    "qrcode"
+    "qrcode",
+    "tag"
   ],
   "homepage": "https://github.com/simongolms/homekit-code.git",
   "license": "MIT",
