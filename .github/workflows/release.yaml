@@ -9,6 +9,8 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-20.04
+    env:
+      HUSKY: 0 # Disable husky and git-hooks
     steps:
       - name: Checkout
         uses: actions/checkout@v2
