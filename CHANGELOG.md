@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/simongolms/homekit-code/compare/v1.0.3...v1.0.4) (2022-01-31)
+
+
+### Bug Fixes
+
+* already declared variable name ([4edc32c](https://github.com/simongolms/homekit-code/commit/4edc32c96f20dbd7220f766f9243c762232eebb5))
+
 ## [1.0.3](https://github.com/simongolms/homekit-code/compare/v1.0.2...v1.0.3) (2022-01-31)
 
 ## [1.0.2](https://github.com/simongolms/homekit-code/compare/v1.0.1...v1.0.2) (2022-01-30)
