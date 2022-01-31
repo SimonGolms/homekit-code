@@ -9,8 +9,8 @@ export const argv = yargs(process.argv.slice(2))
   .detectLocale(false)
   // Format usage output
   .wrap(null)
-  .command('qrcode', 'Generate a scannable HomeKit QR Code label', (yargs) => {
-    return yargs
+  .command('qrcode', 'Generate a scannable HomeKit QR Code label', (yargsCmd) => {
+    return yargsCmd
       .options({
         category: {
           alias: 'c',
@@ -56,8 +56,8 @@ export const argv = yargs(process.argv.slice(2))
         'Generate a QR code for a HomeKit switch as switch.png with an image zoom factor of 10',
       );
   })
-  .command('tag', 'Generate a scannable HomeKit tag label', (yargs) => {
-    return yargs
+  .command('tag', 'Generate a scannable HomeKit tag label', (yargsCmd) => {
+    return yargsCmd
       .options({
         name: {
           alias: 'n',
