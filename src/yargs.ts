@@ -1,7 +1,8 @@
 import yargs from 'yargs/yargs';
 import { CATEGORIES } from './config/categories';
+import { FLAGS } from './config/flags';
 import { OUTPUT_FORMATS } from './config/output';
-import { Category, OutputFormat } from './types';
+import { Category, Flag, OutputFormat } from './types';
 import { isPairingCode } from './utils/number';
 
 export const argv = yargs(process.argv.slice(2))
@@ -17,6 +18,13 @@ export const argv = yargs(process.argv.slice(2))
           choices: Object.keys(CATEGORIES),
           default: Object.keys(CATEGORIES)[0] as Category,
           describe: 'Category of the HomeKit accessory, required for generating a QR Code',
+        },
+        flag: {
+          alias: 'f',
+          choices: Object.keys(FLAGS),
+          default: 'ip' as Flag,
+          demandOption: true,
+          describe: 'Flag how to connect to the HomeKit accessory.',
         },
         name: {
           alias: 'n',
@@ -54,6 +62,10 @@ export const argv = yargs(process.argv.slice(2))
       .example(
         'npx homekit-code qrcode --category=switch --pairingCode=84131633 --setupId=3QYT --name=switch --output=png --zoom=10',
         'Generate a QR code for a HomeKit switch as switch.png with an image zoom factor of 10',
+      )
+      .example(
+        'npx homekit-code qrcode -c=switch -f=ble -p=84131633 -s=3QYT',
+        'Generate a QR code for a Bluetooth Low Energy (BLE) HomeKit switch',
       );
   })
   .command('tag', 'Generate a scannable HomeKit tag label', (yargsCmd) => {

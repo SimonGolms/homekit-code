@@ -1,5 +1,5 @@
 import { QRCodeToStringOptions, toString } from 'qrcode';
-import { ComposeQrCode } from '../../types';
+import { ComposeQrCode, ComposeSetupUri } from '../../types';
 
 const QR_CODE_STRING_OPTIONS: QRCodeToStringOptions = {
   errorCorrectionLevel: 'quartile',
@@ -45,7 +45,7 @@ export const composeQrCode = async ({ pairingCode, setupUri }: ComposeQrCode) =>
 };
 
 // KUDOS: https://github.com/maximkulkin/esp-homekit/blob/0f3ef2ac2872ffe64dfe4e5d929420af327d48a5/tools/gen_qrcode#L18
-export const composeSetupUri = (category: number, password: string, setupId: string, version = 0, reserved = 0, flags = 2): string => {
+export const composeSetupUri = ({ categoryId, flag = 2, password, reserved = 0, setupId, version = 0 }: ComposeSetupUri) => {
   let payload: bigint | number = 0;
   payload = payload | (version & 0x7);
 
@@ -53,10 +53,10 @@ export const composeSetupUri = (category: number, password: string, setupId: str
   payload = payload | (reserved & 0xf);
 
   payload = payload << 8;
-  payload = payload | (category & 0xff);
+  payload = payload | (categoryId & 0xff);
 
   payload = payload << 4;
-  payload = payload | (flags & 0xf);
+  payload = payload | (flag & 0xf);
 
   payload = BigInt(payload) << BigInt(27);
   payload = BigInt(payload) | BigInt(Number(password) & 0x7fffffff);

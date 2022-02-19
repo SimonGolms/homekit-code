@@ -1,7 +1,10 @@
 import { CATEGORIES } from '../config/categories';
+import { FLAGS } from '../config/flags';
 import { OUTPUT_FORMATS } from '../config/output';
 
 export type Category = keyof typeof CATEGORIES;
+
+export type Flag = keyof typeof FLAGS;
 
 export type OutputFormat = typeof OUTPUT_FORMATS[number];
 
@@ -24,8 +27,18 @@ export type CreateTag = Omit<WriteFile, 'svg'> & {
 
 export type CreateQrCode = Omit<WriteFile, 'svg'> & {
   category: Category;
+  flag: Flag;
   pairingCode: string;
   setupId: string;
+};
+
+export type ComposeSetupUri = {
+  categoryId: number;
+  flag?: number; // 2 = IP; 4 = BLE; 8 = Wireless Accessory Configuration (WAC) / Apple's MFi
+  password: string;
+  reserved?: number;
+  setupId: string;
+  version?: number;
 };
 
 export type ComposeQrCode = {

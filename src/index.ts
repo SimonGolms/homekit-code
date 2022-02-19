@@ -9,8 +9,8 @@ const main = async () => {
   const { _: commands, name, output, pairingCode, zoom } = argv;
 
   if (commands[0] === 'qrcode') {
-    const { category, setupId = '' } = argv;
-    await createQrCode({ category, name, output, pairingCode, setupId, zoom });
+    const { category, flag, setupId = '' } = argv;
+    await createQrCode({ category, flag, name, output, pairingCode, setupId, zoom });
   }
   if (commands[0] === 'tag') {
     await createTag({ name, output, pairingCode, zoom });
