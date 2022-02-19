@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.1.0](https://github.com/simongolms/homekit-code/compare/v1.0.4...v1.1.0) (2022-02-19)
+
+
+### Features
+
+* support ip, ble and wic as connection flag for the homekit accessory ([a5d233a](https://github.com/simongolms/homekit-code/commit/a5d233a942556c8518bd201ee31563f5f17c6e77)), closes [#1](https://github.com/simongolms/homekit-code/issues/1)
+
 ## [1.0.4](https://github.com/simongolms/homekit-code/compare/v1.0.3...v1.0.4) (2022-01-31)
 
 
