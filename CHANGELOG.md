@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.2.0](https://github.com/simongolms/homekit-code/compare/v1.1.0...v1.2.0) (2022-02-28)
+
+
+### Features
+
+* support dynamic connection flag for the homekit accessory ([6cc949c](https://github.com/simongolms/homekit-code/commit/6cc949ce1f605ea796dda7e8e0623b7ae49e5ddc)), closes [#1](https://github.com/simongolms/homekit-code/issues/1)
+
 # [1.1.0](https://github.com/simongolms/homekit-code/compare/v1.0.4...v1.1.0) (2022-02-19)
 
 
