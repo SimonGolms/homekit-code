@@ -1,30 +1,27 @@
 import { CATEGORIES } from '../../config/categories';
-import { FLAGS } from '../../config/flags';
 import { composeQrCode, composeSetupUri } from './qrcode.utils';
 
 describe('composeSetupUri', () => {
   test('get Setup Uri for category, password', () => {
     expect.assertions(1);
-    expect(composeSetupUri({ categoryId: CATEGORIES.switch, password: '84131633', setupId: '' })).toBe('X-HM://0081YCYEP');
+    expect(composeSetupUri({ categoryId: CATEGORIES.switch, flag: 2, password: '84131633', setupId: '' })).toBe('X-HM://0081YCYEP');
   });
 
   test('get Setup Uri for category, password and setupId', () => {
     expect.assertions(1);
-    expect(composeSetupUri({ categoryId: CATEGORIES.switch, password: '84131633', setupId: '3QYT' })).toBe('X-HM://0081YCYEP3QYT');
+    expect(composeSetupUri({ categoryId: CATEGORIES.switch, flag: 2, password: '84131633', setupId: '3QYT' })).toBe('X-HM://0081YCYEP3QYT');
   });
 
   test('get Setup Uri for category, flag, password and setupId', () => {
     expect.assertions(1);
-    expect(composeSetupUri({ categoryId: CATEGORIES.switch, flag: FLAGS.ble, password: '84131633', setupId: '3QYT' })).toBe(
-      'X-HM://0086E6GJ53QYT',
-    );
+    expect(composeSetupUri({ categoryId: CATEGORIES.switch, flag: 4, password: '84131633', setupId: '3QYT' })).toBe('X-HM://0086E6GJ53QYT');
   });
 });
 
 describe('composeQrCode', () => {
   test('get QR code for switch', async () => {
     expect.assertions(1);
-    const setupUri = composeSetupUri({ categoryId: CATEGORIES.switch, password: '84131633', setupId: '3QYT' });
+    const setupUri = composeSetupUri({ categoryId: CATEGORIES.switch, flag: 2, password: '84131633', setupId: '3QYT' });
     const qrCode = await composeQrCode({ pairingCode: '84131633', setupUri });
 
     expect(qrCode).toBe(`<?xml version="1.0" encoding="utf-8"?>
@@ -62,7 +59,7 @@ describe('composeQrCode', () => {
 
   test('get QR code for ble switch', async () => {
     expect.assertions(1);
-    const setupUri = composeSetupUri({ categoryId: CATEGORIES.switch, flag: FLAGS.ble, password: '84131633', setupId: '3QYT' });
+    const setupUri = composeSetupUri({ categoryId: CATEGORIES.switch, flag: 4, password: '84131633', setupId: '3QYT' });
     const qrCode = await composeQrCode({ pairingCode: '84131633', setupUri });
 
     expect(qrCode).toBe(`<?xml version="1.0" encoding="utf-8"?>

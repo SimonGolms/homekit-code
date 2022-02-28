@@ -29,7 +29,7 @@ Options:
       --version      Show version number  [boolean]
       --help         Show help  [boolean]
   -c, --category     Category of the HomeKit accessory, required for generating a QR Code  [choices: "airConditioner", "airport", "airPurifier", "appleTv", "bridge", "dehumidifier", "door", "doorLock", "fan", "faucet", "garage", "heater", "humidifier", "ipCamera", "lightbulb", "other", "outlet", "programmableSwitch", "rangeExtender", "securitySystem", "sensor", "showerHead", "speaker", "sprinkler", "switch", "targetController", "television", "thermostat", "videoDoorBell", "window", "windowCovering"] [default: "airConditioner"]
-  -f, --flag         Flag how to connect to the HomeKit accessory.  [required] [choices: "ble", "ip", "wac"] [default: "ip"]
+  -f, --flag         Flag how to connect to the HomeKit accessory. (1 = NFC; 2 = IP; 4 = BLE; 8 = Wireless Accessory Configuration (WAC)/Apples MFi)  [number] [default: 2]
   -n, --name         Name of the generated file  [string] [default: "homekit-qrcode"]
   -o, --output       Format of the generated file  [required] [choices: "svg", "png"] [default: "svg"]
   -p, --pairingCode  8 digits pairing code  [string] [required]
@@ -43,8 +43,8 @@ Examples:
   # Generate a QR code for a HomeKit switch as switch.png with an image zoom factor of 10
   npx homekit-code qrcode --category=switch --pairingCode=84131633 --setupId=3QYT --name=switch --output=png --zoom=10
 
-  # Generate a QR code for a Bluetooth Low Energy (BLE) HomeKit switch
-  npx homekit-code qrcode -c switch -f ble -p 84131633 -s 3QYT
+  # Generate a QR code for a IP (2) + WAC (8) HomeKit switch
+  npx homekit-code qrcode -c switch -f 10 -p 84131633 -s 3QYT
 ```
 
 ### Output

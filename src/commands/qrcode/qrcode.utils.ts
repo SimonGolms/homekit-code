@@ -45,7 +45,7 @@ export const composeQrCode = async ({ pairingCode, setupUri }: ComposeQrCode) =>
 };
 
 // KUDOS: https://github.com/maximkulkin/esp-homekit/blob/0f3ef2ac2872ffe64dfe4e5d929420af327d48a5/tools/gen_qrcode#L18
-export const composeSetupUri = ({ categoryId, flag = 2, password, reserved = 0, setupId, version = 0 }: ComposeSetupUri) => {
+export const composeSetupUri = ({ categoryId, flag, password, reserved = 0, setupId, version = 0 }: ComposeSetupUri) => {
   let payload: bigint | number = 0;
   payload = payload | (version & 0x7);
 
