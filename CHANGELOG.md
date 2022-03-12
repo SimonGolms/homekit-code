@@ -1,5 +1,18 @@
 # Changelog
 
+### [1.2.1](https://github.com/simongolms/homekit-code/compare/v1.2.0...v1.2.1) (2022-03-12)
+
+
+### Build System
+
+* **deps:** update linter dependencies ([c6b3b30](https://github.com/simongolms/homekit-code/commit/c6b3b30668d2b5ecffe8d4b47dcd56a2f847b9a2))
+* **deps:** update types dependencies ([d818017](https://github.com/simongolms/homekit-code/commit/d818017429e0de2c608b10c89ef406cde6c07e7a))
+
+
+### Continuous Integration
+
+* **release:** enhance the release notes ([2de1134](https://github.com/simongolms/homekit-code/commit/2de11344f5ebda8248366b4bd04076335a6cab8d))
+
 # [1.2.0](https://github.com/simongolms/homekit-code/compare/v1.1.0...v1.2.0) (2022-02-28)
 
 
