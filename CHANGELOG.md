@@ -1,5 +1,24 @@
 # Changelog
 
+### [1.2.2](https://github.com/simongolms/homekit-code/compare/v1.2.1...v1.2.2) (2022-03-21)
+
+
+### Styles
+
+* update to a natural insensitive ascending order ([3f59c0c](https://github.com/simongolms/homekit-code/commit/3f59c0c46228102bc14a6896f7a75751d0a4486b))
+
+
+### Code Refactoring
+
+* remove unused code ([96aa842](https://github.com/simongolms/homekit-code/commit/96aa842f715945ea52386ac7c8628135b2e20348))
+
+
+### Build System
+
+* **deps:** update linter dependencies ([82f3760](https://github.com/simongolms/homekit-code/commit/82f3760653e001a7d754743f65449801143f7f3c))
+* **deps:** update types dependencies ([05c6ddf](https://github.com/simongolms/homekit-code/commit/05c6ddfee4fe817522d98fec3c2109b15168c70c))
+* **deps:** update yargs dependency ([72dbea9](https://github.com/simongolms/homekit-code/commit/72dbea983b4fab3fce93bdca87a779bc17b154c8))
+
 ### [1.2.1](https://github.com/simongolms/homekit-code/compare/v1.2.0...v1.2.1) (2022-03-12)
 
 
