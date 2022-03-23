@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.2.3](https://github.com/simongolms/homekit-code/compare/v1.2.2...v1.2.3) (2022-03-23)
+
+
+### Build System
+
+* **deps:** update linter dependency ([99360cd](https://github.com/simongolms/homekit-code/commit/99360cdf8b1d82af37e3d9058570db13a8b1a5d4))
+
 ### [1.2.2](https://github.com/simongolms/homekit-code/compare/v1.2.1...v1.2.2) (2022-03-21)
 
 
