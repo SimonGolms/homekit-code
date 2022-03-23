@@ -68,7 +68,7 @@
     "dotenv": "16.0.0",
     "eslint": "8.11.0",
     "eslint-config-prettier": "8.5.0",
-    "eslint-import-resolver-typescript": "2.5.0",
+    "eslint-import-resolver-typescript": "2.7.0",
     "eslint-plugin-import": "2.25.4",
     "eslint-plugin-jest": "26.1.2",
     "eslint-plugin-no-type-assertion": "1.1.1",
