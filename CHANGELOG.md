@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.2.4](https://github.com/simongolms/homekit-code/compare/v1.2.3...v1.2.4) (2022-06-06)
+
+
+### Bug Fixes
+
+* migrate to new resvg-js version ([cc6e63e](https://github.com/simongolms/homekit-code/commit/cc6e63ebca86b286cc771b35796127caf614a53f))
+
+
+### Build System
+
+* **deps:** update dependencies ([cf9a90c](https://github.com/simongolms/homekit-code/commit/cf9a90c945f1c7d9b6711e954ac7e50102a03d36))
+* **deps:** update dev dependencies ([ac31d25](https://github.com/simongolms/homekit-code/commit/ac31d2557773ac0bb35ebabc24fed4b50014b2b7))
+* update git hooks ([92229ec](https://github.com/simongolms/homekit-code/commit/92229ec79c5b8d267c9ecf831257f202017b394e))
+* **deps:** update linter dependencies ([721240f](https://github.com/simongolms/homekit-code/commit/721240f70f3b77836704c7711107c7e044b7c528))
+* **deps:** update test dependencies ([362bb14](https://github.com/simongolms/homekit-code/commit/362bb14b4335c0c8c2ea249ddff391502d303bbe))
+* **deps:** update test dependencies ([99e9db8](https://github.com/simongolms/homekit-code/commit/99e9db838ca9fefd03a3da00252557d235456f89))
+
+
+### Documentation
+
+* **README:** fix typo in cli usage of tag command ([dc9b298](https://github.com/simongolms/homekit-code/commit/dc9b29861f58fe44a54fd201c80040b98c819a28))
+
 ### [1.2.3](https://github.com/simongolms/homekit-code/compare/v1.2.2...v1.2.3) (2022-03-23)
 
 
