@@ -60,7 +60,7 @@
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.2",
     "@types/jest": "28.1.1",
-    "@types/node": "17.0.22",
+    "@types/node": "17.0.40",
     "@types/qrcode": "1.4.2",
     "@types/yargs": "17.0.10",
     "@typescript-eslint/eslint-plugin": "5.27.0",
@@ -84,6 +84,6 @@
     "semantic-release": "19.0.2",
     "ts-jest": "28.0.4",
     "ts-node": "10.7.0",
-    "typescript": "4.6.2"
+    "typescript": "4.7.3"
   }
 }
