@@ -60,7 +60,7 @@ npx homekit-code tag --pairingCode=84131633
 ### CLI
 
 ```txt
-Usage: homekit-code qrcode [options]
+Usage: homekit-code tag [options]
 
 Generate a scannable HomeKit tag label
 
