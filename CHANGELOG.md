@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.6](https://github.com/simongolms/homekit-code/compare/v1.2.5...v1.2.6) (2022-06-30)
+
+
+### Build System
+
+* **husky:** fix commit-msg hook to handle git parameter ([833d38b](https://github.com/simongolms/homekit-code/commit/833d38b2bbf0d0ade6c615115f90345e0a40e742))
+* **deps:** update dependencies to fix security vulnerabilities ([88936bc](https://github.com/simongolms/homekit-code/commit/88936bceb7e2941e762957a01ab1594f55f9de0e))
+
 ## [1.2.5](https://github.com/simongolms/homekit-code/compare/v1.2.4...v1.2.5) (2022-06-11)
 
 
