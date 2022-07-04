@@ -1,6 +1,6 @@
 {
   "name": "homekit-code",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "Generate a pairing HomeKit QR code label or scannable tag to setup your HomeKit accessory.",
   "keywords": [
     "apple",
