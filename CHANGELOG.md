@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.8](https://github.com/simongolms/homekit-code/compare/v1.2.7...v1.2.8) (2022-07-10)
+
+
+### Build System
+
+* **deps:** update dependencies to fix security vulnerabilities ([4dc34e0](https://github.com/simongolms/homekit-code/commit/4dc34e0238f1a6cb5b3d97e813a97b7549ad8360))
+
 ## [1.2.7](https://github.com/simongolms/homekit-code/compare/v1.2.6...v1.2.7) (2022-07-04)
 
 
