@@ -8,16 +8,16 @@ on:
 jobs:
   release:
     name: Release
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     env:
       HUSKY: 0 # Disable husky and git-hooks
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '18'
           cache: 'npm'
       - name: Install Dependencies
         run: npm ci
