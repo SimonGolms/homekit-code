@@ -3,6 +3,7 @@ import { OUTPUT_FORMATS } from '../config/output';
 
 export type Category = keyof typeof CATEGORIES;
 
+// eslint-disable-next-line prettier/prettier
 export type OutputFormat = typeof OUTPUT_FORMATS[number];
 
 export type CreateFileBuffer = CreateImage & {

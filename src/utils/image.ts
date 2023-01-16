@@ -1,7 +1,7 @@
 import { Resvg } from '@resvg/resvg-js';
 import { CreateImage } from '../types';
 
-export const createImage = async ({ svg, zoom = 5 }: CreateImage): Promise<Buffer> => {
+export const createImage = ({ svg, zoom = 5 }: CreateImage) => {
   const resvg = new Resvg(svg, {
     fitTo: {
       mode: 'zoom',

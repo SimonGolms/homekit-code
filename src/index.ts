@@ -3,6 +3,7 @@
 
 import { createQrCode } from './commands/qrcode/qrcode';
 import { createTag } from './commands/tag/tag';
+import { isValidCategory } from './utils/isValidCategory';
 import { argv } from './yargs';
 
 const main = async () => {
@@ -10,11 +11,14 @@ const main = async () => {
 
   if (commands[0] === 'qrcode') {
     const { category, flag, setupId = '' } = argv;
-    await createQrCode({ category, flag, name, output, pairingCode, setupId, zoom });
+    // Type-Guard since yargs does not support custom types that well
+    if (isValidCategory(category)) {
+      await createQrCode({ category, flag, name, output, pairingCode, setupId, zoom });
+    }
   }
   if (commands[0] === 'tag') {
     await createTag({ name, output, pairingCode, zoom });
   }
 };
 
-main();
+void main();
