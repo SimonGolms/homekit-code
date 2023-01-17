@@ -1,7 +1,7 @@
 import { composeTag } from './tag.utils';
 
 describe('composeTag', () => {
-  test('get Setup Uri for switch', async () => {
+  test('get Setup Uri for switch', () => {
     expect.assertions(1);
     const tag = composeTag('84131633');
 

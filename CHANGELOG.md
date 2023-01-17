@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.2.12](https://github.com/simongolms/homekit-code/compare/v1.2.11...v1.2.12) (2023-01-16)
+
+
+### Build System
+
+* **release:** 1.2.10 [skip ci] ([ef40e80](https://github.com/simongolms/homekit-code/commit/ef40e808065c3e4ec07266a3056581ff4f1b37be))
+* **release:** 1.2.11 [skip ci] ([fafd6d7](https://github.com/simongolms/homekit-code/commit/fafd6d769dc16da2b2fb1010c7f00a17c7cec54a))
+* **eslint:** enable strict rule set form [@typescript-eslint](https://github.com/typescript-eslint) ([f02d44c](https://github.com/simongolms/homekit-code/commit/f02d44c4635f8496229150a5bb15299dfff3e7bb))
+* **husky:** fix coloring in output text ([4a71214](https://github.com/simongolms/homekit-code/commit/4a7121422dc9b51dd8fc5e4831c44ea933eb538a))
+* **husky:** force basename/dirname to treat $0 as an argument ([9607c98](https://github.com/simongolms/homekit-code/commit/9607c988bc2bcc07e80417b3718ddf6c9084974e)), closes [typicode/husky#1132](https://github.com/typicode/husky/issues/1132)
+* **husky:** limit the possibility of package installation after a branch switch ([256af00](https://github.com/simongolms/homekit-code/commit/256af007b110014da652af701a632c720fae9b51))
+* **deps:** update dependencies ([6c1b0b2](https://github.com/simongolms/homekit-code/commit/6c1b0b2a94a01a3ecef3387323b9ee6615592da6))
+* **nvm:** use node version 18 ([730ee91](https://github.com/simongolms/homekit-code/commit/730ee9105366dd178e465077c400d71d5d6f5726))
+* **husky:** use recommended shebang to make scripts portable ([b56248f](https://github.com/simongolms/homekit-code/commit/b56248fa00a64f2373b1ae0d61abd565a0bcf5a7)), closes [typicode/husky#1051](https://github.com/typicode/husky/issues/1051)
+
 ## [1.2.11](https://github.com/simongolms/homekit-code/compare/v1.2.10...v1.2.11) (2022-10-31)
 
 

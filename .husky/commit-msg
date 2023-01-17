@@ -1,4 +1,4 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
 
-npx --no -- commitlint --edit $1 || { echo "Try \033[1;32mnpx git-cz --disable-emoji\033[0;37m to commit and be align with the conventions or use \033[1;32git commit -m \"yolo!\" --no-verify\033[0;37m to bypass the commit-msg hook."; exit 1; }
+npx --no -- commitlint --edit "$1" || { echo "Try \033[1;32mnpx git-cz --disable-emoji\033[0;37m to commit and be align with the conventions or use \033[1;33mgit commit -m \"yolo!\" --no-verify\033[0;37m to bypass the commit-msg hook."; exit 1; }
