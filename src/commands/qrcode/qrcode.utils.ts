@@ -1,5 +1,6 @@
-import { QRCodeToStringOptions, toString } from 'qrcode';
-import { ComposeQrCode, ComposeSetupUri } from '../../types';
+import type { QRCodeToStringOptions } from 'qrcode';
+import { toString } from 'qrcode';
+import type { ComposeQrCode, ComposeSetupUri } from '../../types';
 
 const QR_CODE_STRING_OPTIONS: QRCodeToStringOptions = {
   errorCorrectionLevel: 'quartile',

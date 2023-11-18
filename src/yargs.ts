@@ -1,7 +1,7 @@
 import yargs from 'yargs/yargs';
 import { CATEGORIES } from './config/categories';
 import { OUTPUT_FORMATS } from './config/output';
-import { Category, OutputFormat } from './types';
+import type { Category, OutputFormat } from './types';
 import { isPairingCode } from './utils/number';
 
 export const argv = yargs(process.argv.slice(2))

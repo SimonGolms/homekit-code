@@ -1,5 +1,5 @@
 import { Resvg } from '@resvg/resvg-js';
-import { CreateImage } from '../types';
+import type { CreateImage } from '../types';
 
 export const createImage = ({ svg, zoom = 5 }: CreateImage) => {
   const resvg = new Resvg(svg, {
