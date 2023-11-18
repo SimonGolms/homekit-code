@@ -10,22 +10,23 @@ jobs:
     name: Release
     runs-on: ubuntu-22.04
     env:
-      HUSKY: 0 # Disable husky and git-hooks
+      HUSKY: 0 # Disable husky (git hooks) in CI, see: https://typicode.github.io/husky/#/?id=disable-husky-in-cidocker
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v3
         with:
-          node-version: '18'
-          cache: 'npm'
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          registry-url: https://registry.npmjs.org/
+          cache: npm
       - name: Install Dependencies
-        run: npm ci
+        run: npm clean-install
       - name: Run Tests
         run: npm test
       - name: Build Package
         run: npm run build
-      - name: Release Package
+      - name: Release package to npm and GitHub
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

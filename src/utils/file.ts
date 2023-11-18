@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { CreateFileBuffer, WriteFile } from '../types';
+import type { CreateFileBuffer, WriteFile } from '../types';
 import { createImage } from './image';
 
 const createFileBuffer = async ({ output, svg, zoom }: CreateFileBuffer): Promise<Buffer> => {

@@ -1,5 +1,5 @@
-import { CATEGORIES } from '../config/categories';
-import { OUTPUT_FORMATS } from '../config/output';
+import type { CATEGORIES } from '../config/categories';
+import type { OUTPUT_FORMATS } from '../config/output';
 
 export type Category = keyof typeof CATEGORIES;
 
