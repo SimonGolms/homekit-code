@@ -45,7 +45,7 @@
     "release": "dotenv semantic-release --no-ci",
     "release:ci": "semantic-release",
     "release:dry-run": "npm run release -- --dry-run",
-    "repair": "npx rimraf lib node_modules .git/hooks package-lock.json && npm install",
+    "repair": "npx --yes rimraf lib node_modules .git/hooks package-lock.json && npm install",
     "test": "jest"
   },
   "dependencies": {
