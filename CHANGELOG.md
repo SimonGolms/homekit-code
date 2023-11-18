@@ -1,5 +1,34 @@
 # Changelog
 
+## [1.2.13](https://github.com/simongolms/homekit-code/compare/v1.2.12...v1.2.13) (2023-11-18)
+
+
+### Build System
+
+* **npm:** add configuration file ([d61909b](https://github.com/simongolms/homekit-code/commit/d61909b91ca07deb595068ce198d539f7a8fe589))
+* **typescript:** combine configuration into one ([34ee723](https://github.com/simongolms/homekit-code/commit/34ee7233cf308acfcba94e43d5aca7406f70768c))
+* **eslint:** extend configuration with `@boehringer-ingelheim/eslint-config/base/strict` ([0124e10](https://github.com/simongolms/homekit-code/commit/0124e10d39b405e69c22f7717b68e89b82329687))
+* **scripts:** refine repair script ([04d82ab](https://github.com/simongolms/homekit-code/commit/04d82abbd1e8e6f41f91360755cb5a9029d37d29))
+* rename release configuration file ([c9be7bc](https://github.com/simongolms/homekit-code/commit/c9be7bc24679ebd404633486cbd618c941579558))
+* **deps:** update dependencies ([327cf5e](https://github.com/simongolms/homekit-code/commit/327cf5e2751cb8b6c6205bd6211d1b425c808cba))
+* **deps:** update dependencies ([4b6d7dc](https://github.com/simongolms/homekit-code/commit/4b6d7dc5e59aa6b8d69e82b34e1ab00f3e53cd83))
+* **deps:** update dependencies ([b960f6e](https://github.com/simongolms/homekit-code/commit/b960f6e83e6e0c837f56d56fbfea8dcce3ac8e4f))
+* **deps:** update dependencies ([ceb24ea](https://github.com/simongolms/homekit-code/commit/ceb24ea06d30e21797a5fb1aa8089377c2f99af5))
+* **typescript:** use extra eslint configuration ([7ab72e3](https://github.com/simongolms/homekit-code/commit/7ab72e333803613554f80d2e4673f3eddcd9e5d9))
+* use node v20 ([b4cd0ea](https://github.com/simongolms/homekit-code/commit/b4cd0ea42ea34724973353c958a86a33e6c65e53))
+
+
+### Continuous Integration
+
+* **github:** add function to trigger release workflow manually ([87d453d](https://github.com/simongolms/homekit-code/commit/87d453d7abd940740f8c6f7cc60ba74908c57486))
+* **github:** fix release workflow to publish npm package ([0e914e4](https://github.com/simongolms/homekit-code/commit/0e914e4120e6e245ceb5b7fcea4c21d537e8e82e))
+* **github:** refine release workflow ([90c2741](https://github.com/simongolms/homekit-code/commit/90c2741e5592578228a4e404c30ad8f827bf7fcb))
+
+
+### Code Refactoring
+
+* fix eslint errors ([b31c609](https://github.com/simongolms/homekit-code/commit/b31c60943ce50b0ee72ee078b587758a4848dfd2))
+
 ## [1.2.12](https://github.com/simongolms/homekit-code/compare/v1.2.11...v1.2.12) (2023-01-16)
 
 
