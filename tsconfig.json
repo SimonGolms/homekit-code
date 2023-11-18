@@ -11,6 +11,6 @@
     "target": "es5",
     "types": ["jest", "node"]
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "./.eslintrc.js", "./.releaserc.js", "./jest.config.ts"],
   "exclude": ["node_modules"]
 }
