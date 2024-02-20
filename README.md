@@ -173,7 +173,7 @@ Scan the QR code with a QR scanner of your choice. You should get a text startin
 ```txt
 X-HM://0081YCYEP3QYT ◄── Scanned Setup Payload
 
-X-HM:// 008YCYEP 3QYT
+X-HM:// 0081YCYEP 3QYT
   ▲        ▲      ▲
   │        │      └─── Setup ID
   │        └── Combination of Parameters (first 9 characters)
